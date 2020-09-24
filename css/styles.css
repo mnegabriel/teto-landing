@@ -1,20 +1,31 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin          : 0;
+    padding         : 0;
+    box-sizing      : border-box;
 }
 
 :root{
-    --col-primary:;
-    --col-accent:;
-    --col-bg:;
-    --col-font:;
+    --col-blue1     : #0092DD;
+    --col-blue2     : #3BB4F2;
+    --col-blue3     : #7EC6EB;
+    --col-blue4     : #BCDCED;
+    --col-blue5     : #DFEDF4;
+    --col-gray1     : #4f4f4f;
+    --col-gray2     : #828282;
+    --col-gray3     : #bdbdbd;
+    --col-gray4     : #e0e0e0;
     /*  */
-    --font-primary:;
-    --font-accent:;
+    --font-primary  : 'Montserrat', sans-serif;
+    --font-accent   : 'Raleway', sans-serif;
+    --font-p-bold   : 800;
+    --font-p        : 500;
+    --font-p-light  : 300;
+    --font-a-bold   : 700;
+    --font-a        : 400;
+    --font-a-light  : 200;
 }
 
 html, 
 body {
-    width: 100vw
+    width           : 100vw;
 }
