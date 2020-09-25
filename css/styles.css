@@ -107,6 +107,8 @@ menu img {
     padding             : 16px 16px;
     margin              : 20px 0 30px;
     background: white;
+    text-align: center;
+    max-width: 949px;
 }
 
 .banner .content button {
@@ -156,18 +158,18 @@ menu img {
     height              : 400px;
 }
 .conteudo .content .descricao {
-    padding: 40px
+    padding: 20px
 }
 
-.descricao{
-    /* padding             : 100px 0 */
-}
 .descricao > h2{
-    font-size           : 2.1rem;
+    font-size           : 1.6rem;
     color               : var(--col-blue1)
 }
-.descricao > *{
-    padding             : 10px 30px
+.descricao > p{
+    font-size: 0.8rem;
+}
+.descricao > *:not(:last-child){
+    padding-bottom             : 10px
 }
 
     /* PROBLEMA */
@@ -327,13 +329,16 @@ footer h2{
 
 
 @media(min-width:700px){
+    .video .content iframe {
+        height              : calc(80vw / 1.77153558052434);
+        width: 80vw
+    }
+    
     .conteudo .content{
         flex-direction: row;
         align-items: center;
     }
-    .conteudo .content img{
-        height: 100%
-    }
+    
     .problema .content{
         flex-direction: row-reverse;
     }
