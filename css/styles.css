@@ -65,8 +65,8 @@ menu img {
 }
 
     /* BANNER */
-.banner {
-    height              : 300px;
+.banner .content {
+    height              : 500px;
     display             : flex;
     flex-direction      : column;
     justify-content     : center;
@@ -75,12 +75,14 @@ menu img {
     background          : var(--col-blue5);
 }
 
-.banner h3 {
+.banner .content h3 {
     font-family         : var(--font-accent);
     font-weight         : var(--font-a-regular);
+    padding: 0 16px;
+    margin: 20px 0 30px;
 }
 
-.banner button {
+.banner .content button {
     margin-top          : 20px;
     padding             : 16px 60px;
     border              : none;
@@ -92,7 +94,7 @@ menu img {
 }
 
     /* VIDEO */
-.video {
+.video .content {
     display             : flex;
     flex-direction      : column;
     align-items         : center;
@@ -100,12 +102,12 @@ menu img {
     padding             : 30px 0 40px;
 }
 
-.video h2 {
+.video .content h2 {
     color               : var(--col-blue2);
     font-size           : 2rem;
 }
 
-.video iframe {
+.video .content iframe {
     width               : 100vw;
     height              : calc(100vw / 1.77153558052434);
     max-width           : 949px;
@@ -114,13 +116,13 @@ menu img {
 
     /* CONTEUDO */
 
-.conteudo {
+.conteudo .content {
     display             : flex;
     flex-direction      : column;
     text-align          : center;
 }
 
-.conteudo img {
+.conteudo .content img {
     object-fit          : cover;
     object-position     : center;
     height              : 400px;
@@ -138,7 +140,7 @@ menu img {
 }
 
     /* PROBLEMA */
-.problema{
+.problema {
     background-color    : var(--col-blue5);
 }
 
@@ -158,7 +160,7 @@ menu img {
 
     /* CONQUISTAS */
 
-.conquistas {
+.conquistas .content {
     background          : var(--col-blue5);
     display             :grid;
     grid-template-areas : 
@@ -181,7 +183,7 @@ menu img {
     grid-area           : moradias;
 }
 
-.conquistas > h2 {
+.conquistas .content > h2 {
     grid-area           : titulo;
 }
 
@@ -241,7 +243,11 @@ menu img {
 }
 
     /* FOOTER */
-
+footer h1 {
+    text-align: center;
+    margin: 40px auto;
+    color: var(--col-blue1);
+}
 .logos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -253,5 +259,11 @@ menu img {
 .logos img{
     /* height: 40px; */
     width: 80px;
+}
+
+menu,
+.content{
+    max-width: 900px;
+    margin: 0 auto;
 }
 
