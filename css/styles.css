@@ -1,51 +1,52 @@
 :root{
-    --col-blue1     : #0092DD;
-    --col-blue2     : #3BB4F2;
-    --col-blue3     : #7EC6EB;
-    --col-blue4     : #BCDCED;
-    --col-blue5     : #DFEDF4;
-    --col-gray1     : #4f4f4f;
-    --col-gray2     : #828282;
-    --col-gray3     : #bdbdbd;
-    --col-gray4     : #e0e0e0;
+    --col-blue1         : #0092DD;
+    --col-blue2         : #3BB4F2;
+    --col-blue3         : #7EC6EB;
+    --col-blue4         : #BCDCED;
+    --col-blue5         : #DFEDF4;
+    --col-white-trans   : #ffffffa6;
+    --col-gray1         : #4f4f4f;
+    --col-gray2         : #828282;
+    --col-gray3         : #bdbdbd;
+    --col-gray4         : #e0e0e0;
     /*  */
-    --font-primary  : 'Montserrat', sans-serif;
-    --font-accent   : 'Raleway', sans-serif;
-    --font-p-bold   : 800;
-    --font-p-regular: 500;
-    --font-p-light  : 300;
-    --font-a-bold   : 700;
-    --font-a-regular: 400;
-    --font-a-light  : 200;
+    --font-primary      : 'Montserrat', sans-serif;
+    --font-accent       : 'Raleway', sans-serif;
+    --font-p-bold       : 800;
+    --font-p-regular    : 500;
+    --font-p-light      : 300;
+    --font-a-bold       : 700;
+    --font-a-regular    : 400;
+    --font-a-light      : 200;
 }
 
 * {
-    margin          : 0;
-    padding         : 0;
-    box-sizing      : border-box;
-    overflow-x      : hidden;
-    font-family     : var(--font-primary);
-    color           : var(--col-gray1)
+    margin              : 0;
+    padding             : 0;
+    box-sizing          : border-box;
+    overflow-x          : hidden;
+    font-family         : var(--font-primary);
+    color               : var(--col-gray2)
 }
 
 
 html, 
 body {
-    width           : 100vw;
+    width               : 100vw;
 }
 
     /* HEADER */
 header{
-    background      : var(--col-blue1);
+    background          : var(--col-blue1);
 }
 
 header menu {
-    display         : flex;
-    justify-content : space-between;
-    align-items     : center;
-    width           : 93vw;
-    margin          : 0 auto;
-    padding-right   : 10px;
+    display             : flex;
+    justify-content     : space-between;
+    align-items         : center;
+    width               : 93vw;
+    margin              : 0 auto;
+    padding-right       : 10px;
 }
 
 menu img {
@@ -53,97 +54,204 @@ menu img {
 }
 
 .social i{
-    color           : white;
-    border          : 2px solid white;
-    border-radius   : 50%;
-    margin-right    : 8px;
-    height          : 34px;
-    width           : 34px;
-    text-align      : center;
-    padding-top     : 7.5px;
+    color               : white;
+    border              : 2px solid white;
+    border-radius       : 50%;
+    margin-right        : 8px;
+    height              : 34px;
+    width               : 34px;
+    text-align          : center;
+    padding-top         : 7.5px;
 }
 
     /* BANNER */
 .banner {
-    height          : 300px;
-    display         : flex;
-    flex-direction  : column;
-    justify-content : center;
-    align-items     : center;
-    gap             : 10px;
-    background      : var(--col-blue5);
+    height              : 300px;
+    display             : flex;
+    flex-direction      : column;
+    justify-content     : center;
+    align-items         : center;
+    gap                 : 10px;
+    background          : var(--col-blue5);
 }
 
 .banner h3 {
-    font-family     : var(--font-accent);
-    font-weight     : var(--font-a-regular);
+    font-family         : var(--font-accent);
+    font-weight         : var(--font-a-regular);
 }
 
 .banner button {
-    margin-top      : 20px;
-    padding         : 16px 60px;
-    border          : none;
-    border-radius   : 5px;
-    background-color: var(--col-blue1);
-    color           : white;
-    font-weight     : var(--font-p-bold);
+    margin-top          : 20px;
+    padding             : 16px 60px;
+    border              : none;
+    border-radius       : 5px;
+    background-color    : var(--col-blue1);
+    color               : white;
+    font-weight         : var(--font-p-bold);
+    text-transform      : uppercase;
 }
 
     /* VIDEO */
 .video {
-    display         : flex;
-    flex-direction  : column;
-    align-items     : center;
-    gap             : 25px;
-    padding         : 30px 0 40px;
+    display             : flex;
+    flex-direction      : column;
+    align-items         : center;
+    gap                 : 25px;
+    padding             : 30px 0 40px;
 }
 
 .video h2 {
-    color           : var(--col-blue2);
-    font-size       : 2rem;
+    color               : var(--col-blue2);
+    font-size           : 2rem;
 }
 
 .video iframe {
-    width           : 100vw;
-    height          : calc(100vw / 1.77153558052434);
-    max-width       : 949px;
-    max-height      : 534px;
+    width               : 100vw;
+    height              : calc(100vw / 1.77153558052434);
+    max-width           : 949px;
+    max-height          : 534px;
 }
 
     /* CONTEUDO */
 
 .conteudo {
-    display         : flex;
-    flex-direction  : column;
-    text-align: center;
+    display             : flex;
+    flex-direction      : column;
+    text-align          : center;
 }
 
 .conteudo img {
-    object-fit: cover;
-    object-position: center;
-    height: 400px;
+    object-fit          : cover;
+    object-position     : center;
+    height              : 400px;
 }
 
-.texto{
-    padding: 100px 0
+.descricao{
+    padding             : 100px 0
 }
-.texto > h2{
-    font-size: 2.1rem;
-    color: var(--col-blue1)
+.descricao > h2{
+    font-size           : 2.1rem;
+    color               : var(--col-blue1)
 }
-.texto > *{
-    padding: 10px 30px
-}
-
-.conquistas {
-    background: var(--col-blue5);
-}
-
-.conquista img{
-    width           : 100px;
+.descricao > *{
+    padding             : 10px 30px
 }
 
     /* PROBLEMA */
 .problema{
-    background-color: var(--col-blue5);
+    background-color    : var(--col-blue5);
 }
+
+
+    /* SOLUÇÃO */
+
+.solucao button {
+    margin-top          : 20px;
+    padding             : 16px 60px;
+    border              : none;
+    border-radius       : 5px;
+    background-color    : var(--col-blue1);
+    color               : white;
+    font-weight         : var(--font-p-bold);
+    text-transform      : uppercase;
+}
+
+    /* CONQUISTAS */
+
+.conquistas {
+    background          : var(--col-blue5);
+    display             :grid;
+    grid-template-areas : 
+                            'titulo titulo titulo'
+                            'voluntarios projetos moradias';
+    text-align          : center;
+    padding             : 60px 0;
+    row-gap             : 40px;
+}
+
+.voluntarios{
+    grid-area           : voluntarios;
+}
+
+.projetos{
+    grid-area           : projetos;
+}
+
+.moradias{
+    grid-area           : moradias;
+}
+
+.conquistas > h2 {
+    grid-area           : titulo;
+}
+
+.conquista{
+    display             : flex;
+    flex-direction      : column;
+    gap                 : 18px;
+    align-items         : center;
+}
+
+.conquista svg{
+    width               : 80px;
+    height              : 80px;
+    fill                : var(--col-blue1);
+}
+
+.moradias > svg{
+    stroke              : var(--col-blue5);
+    stroke-width        : 10px;
+}
+
+.conquista img{
+    width               : 100px;
+}
+
+    /* DEPOIMENTOS */
+
+.depoimentos{
+    background-color    : #0092DD;
+    padding             : 20px 0;
+}
+
+.depoimento{
+    background          : var(--col-white-trans);
+    padding             : 30px 10px;
+    display             : flex;
+    flex-direction      : column;
+    align-items         : center;
+    text-align          : center;
+    gap: 20px;
+}
+
+.depoimento img {
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    padding: 4px;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+
+.texto h4{
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    color: var(--col-gray1);
+}
+
+    /* FOOTER */
+
+.logos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: 20px auto;
+    row-gap: 30px;
+}
+.logos img{
+    /* height: 40px; */
+    width: 80px;
+}
+
