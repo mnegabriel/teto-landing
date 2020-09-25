@@ -5,6 +5,7 @@
     --col-blue4         : #BCDCED;
     --col-blue5         : #DFEDF4;
     --col-white-trans   : #ffffffa6;
+    --col-white-trans   : #ffffff52;
     --col-gray1         : #4f4f4f;
     --col-gray2         : #828282;
     --col-gray3         : #bdbdbd;
@@ -50,7 +51,7 @@ header menu {
 }
 
 menu img {
-    height: 50px;
+    height              : 50px;
 }
 
 .social i{
@@ -64,7 +65,11 @@ menu img {
     padding-top         : 7.5px;
 }
 
-    /* BANNER */
+/* BANNER */
+.banner{
+    background          : var(--col-blue5);
+}
+
 .banner .content {
     height              : 500px;
     display             : flex;
@@ -72,14 +77,13 @@ menu img {
     justify-content     : center;
     align-items         : center;
     gap                 : 10px;
-    background          : var(--col-blue5);
 }
 
 .banner .content h3 {
     font-family         : var(--font-accent);
     font-weight         : var(--font-a-regular);
-    padding: 0 16px;
-    margin: 20px 0 30px;
+    padding             : 0 16px;
+    margin              : 20px 0 30px;
 }
 
 .banner .content button {
@@ -160,15 +164,20 @@ menu img {
 
     /* CONQUISTAS */
 
-.conquistas .content {
+.conquistas {
     background          : var(--col-blue5);
+}
+
+.conquistas .content {
+    text-align          : center;
     display             :grid;
     grid-template-areas : 
                             'titulo titulo titulo'
                             'voluntarios projetos moradias';
-    text-align          : center;
-    padding             : 60px 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding             : 60px 10%;
     row-gap             : 40px;
+    column-gap          : 10%;
 }
 
 .voluntarios{
@@ -192,6 +201,7 @@ menu img {
     flex-direction      : column;
     gap                 : 18px;
     align-items         : center;
+    padding: 0 25px;
 }
 
 .conquista svg{
@@ -217,7 +227,7 @@ menu img {
 }
 
 .depoimento{
-    background          : var(--col-white-trans);
+    background-image          : linear-gradient(0,#ffffff83,#ffffff41);
     padding             : 30px 10px;
     display             : flex;
     flex-direction      : column;
@@ -227,43 +237,90 @@ menu img {
 }
 
 .depoimento img {
-    height: 180px;
-    width: 180px;
-    object-fit: cover;
-    border-radius: 5px;
-    padding: 4px;
-    border-bottom: 2px solid white;
-    border-top: 2px solid white;
+    height              : 180px;
+    width               : 180px;
+    object-fit          : cover;
+    border-radius       : 5px;
+    padding             : 4px;
+    border-bottom       : 2px solid white;
+    border-top          : 2px solid white;
 }
 
 .texto h4{
-    margin-bottom: 20px;
-    font-size: 1.6rem;
-    color: var(--col-gray1);
+    margin-bottom       : 20px;
+    font-size           : 1.6rem;
+    color               : var(--col-gray1);
 }
 
     /* FOOTER */
 footer h1 {
-    text-align: center;
-    margin: 40px auto;
-    color: var(--col-blue1);
+    text-align          : center;
+    margin              : 40px auto;
+    color               : var(--col-blue1);
 }
+
+.AMIGAS H2
 .logos{
-    display: grid;
+    display             : grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    margin: 20px auto;
-    row-gap: 30px;
+    justify-items       : center;
+    align-items         : center;
+    margin              : 20px auto;
+    row-gap             : 30px;
 }
 .logos img{
-    /* height: 40px; */
-    width: 80px;
+    width               : 80px;
 }
+
+
+
+
+
+    /* RESPONSIVINESS */
 
 menu,
 .content{
-    max-width: 900px;
-    margin: 0 auto;
+    max-width           : 900px;
+    margin              : 0 auto;
+}
+
+@media(min-width:700px){
+    .conteudo .content{
+        flex-direction: row;
+    }
+    .problema .content{
+        flex-direction: row-reverse;
+    }
+    .conteudo .content > * {
+        flex: 1;
+    }
+
+    .depoimentos .content:not(:last-child){
+        flex-direction: row-reverse;
+    }
+    .depoimentos .content .depoimento:nth-child(2n){
+        flex-direction: row-reverse;
+    }
+    .depoimentos .content .depoimento:nth-child(2n) .texto{        
+        text-align: right;
+        padding-left: 3%;
+        padding-right: 0;
+    }
+
+    .depoimento{
+        flex-direction: row;
+        margin: 0 70px;
+        border-radius: 5px;
+        padding: 30px
+    }
+    .depoimento .foto{
+        flex: 4;
+    }
+    .depoimento .texto{
+        flex: 6;
+        text-align: left;
+        padding-right: 3%;
+    }
+    
 }
 
