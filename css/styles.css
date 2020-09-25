@@ -157,6 +157,9 @@ menu img {
     object-position     : center;
     height              : 400px;
 }
+.conteudo .content .descricao {
+    padding: 40px
+}
 
 .descricao{
     /* padding             : 100px 0 */
@@ -196,16 +199,12 @@ menu img {
 
 .conquistas .content {
     text-align          : center;
-    display             :grid;
-    grid-template-areas : 
-                            'titulo titulo titulo'
-                            'voluntarios projetos moradias';
-    grid-template-columns: 1fr 1fr 1fr;
-    padding             : 60px 10%;
-    row-gap             : 40px;
-    column-gap          : 10%;
+    display:flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    flex-direction: column;
+    gap: 60px;
 }
-
 .voluntarios{
     grid-area           : voluntarios;
 }
@@ -372,6 +371,16 @@ footer h2{
         margin              : 0 auto;
     }
 
+    .conquistas .content {
+        display             :grid;
+        grid-template-areas : 
+                                'titulo titulo titulo'
+                                'voluntarios projetos moradias';
+        grid-template-columns: 1fr 1fr 1fr;
+        padding             : 60px 10%;
+        row-gap             : 40px;
+        column-gap          : 10%;
+    }
     
 }
 
