@@ -237,13 +237,13 @@ menu img {
 }
 
 .depoimento img {
-    height              : 180px;
-    width               : 180px;
+    height              : 270px;
+    width               : 270px;
     object-fit          : cover;
     border-radius       : 5px;
-    padding             : 4px;
-    border-bottom       : 2px solid white;
-    border-top          : 2px solid white;
+    padding             : 8px;
+    border       : 2px solid white;
+    /* border-top          : 2px solid white; */
 }
 
 .texto h4{
@@ -253,10 +253,19 @@ menu img {
 }
 
     /* FOOTER */
+footer{
+    margin: 40px 20px;
+}
+
 footer h1 {
     text-align          : center;
     margin              : 40px auto;
     color               : var(--col-blue1);
+    
+}
+
+footer h2{
+    margin: 20px 0px;
 }
 
 .AMIGAS H2
@@ -266,10 +275,11 @@ footer h1 {
     justify-items       : center;
     align-items         : center;
     margin              : 20px auto;
-    row-gap             : 30px;
+    row-gap             : 50px;
 }
 .logos img{
-    width               : 80px;
+    width               : 120px;
+    margin: 20px;
 }
 
 
