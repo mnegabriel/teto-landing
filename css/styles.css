@@ -42,6 +42,14 @@ header{
     background          : var(--col-blue1);
 }
 
+button {
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: .8
+}
+
 header menu {
     display             : flex;
     justify-content     : space-between;
@@ -84,6 +92,8 @@ menu img {
     justify-content     : center;
     align-items         : center;
     gap                 : 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .banner .content h1{
@@ -118,7 +128,8 @@ menu img {
     flex-direction      : column;
     align-items         : center;
     gap                 : 25px;
-    padding             : 30px 0 40px;
+
+    /* padding             : 30px 0 40px; */
 }
 
 .video .content h2 {
@@ -146,9 +157,12 @@ menu img {
     object-position     : center;
     height              : 400px;
 }
+.conteudo .content .descricao {
+    padding: 40px
+}
 
 .descricao{
-    padding             : 100px 0
+    /* padding             : 100px 0 */
 }
 .descricao > h2{
     font-size           : 2.1rem;
@@ -185,16 +199,12 @@ menu img {
 
 .conquistas .content {
     text-align          : center;
-    display             :grid;
-    grid-template-areas : 
-                            'titulo titulo titulo'
-                            'voluntarios projetos moradias';
-    grid-template-columns: 1fr 1fr 1fr;
-    padding             : 60px 10%;
-    row-gap             : 40px;
-    column-gap          : 10%;
+    display:flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    flex-direction: column;
+    gap: 60px;
 }
-
 .voluntarios{
     grid-area           : voluntarios;
 }
@@ -361,6 +371,16 @@ footer h2{
         margin              : 0 auto;
     }
 
+    .conquistas .content {
+        display             :grid;
+        grid-template-areas : 
+                                'titulo titulo titulo'
+                                'voluntarios projetos moradias';
+        grid-template-columns: 1fr 1fr 1fr;
+        padding             : 60px 10%;
+        row-gap             : 40px;
+        column-gap          : 10%;
+    }
     
 }
 
