@@ -302,15 +302,15 @@ footer h2{
 
     /* RESPONSIVINESS */
 
-menu,
-.content{
-    max-width           : 900px;
-    margin              : 0 auto;
-}
+
 
 @media(min-width:700px){
     .conteudo .content{
         flex-direction: row;
+        align-items: center;
+    }
+    .conteudo .content img{
+        height: 100%
     }
     .problema .content{
         flex-direction: row-reverse;
@@ -321,6 +321,7 @@ menu,
     
     .depoimento{
         flex-direction: row;
+        align-self: center;
         margin: 0 70px;
         border-radius: 5px;
         padding: 30px
@@ -343,6 +344,12 @@ menu,
         text-align: right;
         padding-left: 3%;
         padding-right: 0;
+    }
+
+    menu,
+    .content{
+        max-width           : 80vw;
+        margin              : 0 auto;
     }
 
     
