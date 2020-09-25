@@ -10,6 +10,7 @@
     --col-gray2         : #828282;
     --col-gray3         : #bdbdbd;
     --col-gray4         : #e0e0e0;
+    --col-orange        : #e67e22;
     /*  */
     --font-primary      : 'Montserrat', sans-serif;
     --font-accent       : 'Raleway', sans-serif;
@@ -102,10 +103,10 @@ menu img {
 
 .banner .content button {
     margin-top          : 20px;
-    padding             : 16px 60px;
+    padding             : 16px 40px;
     border              : none;
     border-radius       : 5px;
-    background-color    : var(--col-blue1);
+    background-color    : var(--col-orange);
     color               : white;
     font-weight         : var(--font-p-bold);
     text-transform      : uppercase;
@@ -170,7 +171,7 @@ menu img {
     padding             : 16px 60px;
     border              : none;
     border-radius       : 5px;
-    background-color    : var(--col-blue1);
+    background-color    : var(--col-orange);
     color               : white;
     font-weight         : var(--font-p-bold);
     text-transform      : uppercase;
@@ -222,6 +223,14 @@ menu img {
     width               : 80px;
     height              : 80px;
     fill                : var(--col-blue1);
+}
+
+.conquista h4 {
+    font-size: 1.6rem;
+    color:  var(--col-orange);
+}
+.conquista p {
+    font-size: 1.2rem;
 }
 
 .moradias > svg{
