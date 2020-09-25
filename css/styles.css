@@ -83,19 +83,19 @@ menu img {
 }
 
 .banner .content {
-    /* height              : 500px; */
     display             : flex;
     flex-direction      : column;
     justify-content     : center;
     align-items         : center;
     gap                 : 10px;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 35px;
 }
 
 .banner .content h1{
     font-size: 40px;
-    color:white;
+    color:var(--col-blue1);
+    text-shadow: 4px 4px var(--col-gray3);
     font-size: 40px;
     text-align: center;
 }
@@ -120,6 +120,7 @@ menu img {
     color               : white;
     font-weight         : var(--font-p-bold);
     text-transform      : uppercase;
+    border: 3px solid white;
 }
 
     /* VIDEO */
@@ -128,8 +129,7 @@ menu img {
     flex-direction      : column;
     align-items         : center;
     gap                 : 25px;
-
-    /* padding             : 30px 0 40px; */
+    padding: 0;
 }
 
 .video .content h2 {
@@ -226,7 +226,7 @@ menu img {
     flex-direction      : column;
     gap                 : 18px;
     align-items         : center;
-    padding: 0 25px;
+    /* padding: 0 25px; */
 }
 
 .conquista svg{
@@ -236,11 +236,11 @@ menu img {
 }
 
 .conquista h4 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color:  var(--col-orange);
 }
 .conquista p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .moradias > svg{
