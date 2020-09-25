@@ -76,10 +76,7 @@ menu img {
 
 /* BANNER */
 .banner{
-    /* background          : linear-gradient(to bottom, var(--col-blue5),var(--col-blue5)),
-     url(https://institucional.techo.org/brasil/wp-content/uploads/sites/4/2018/08/4.2.jpg) no-repeat; */
-    
-     background: linear-gradient(to bottom, rgba(6, 166, 247, 0.3),rgba(223, 237, 244, 0.5)),
+    background: linear-gradient(to bottom, rgba(6, 166, 247, 0.3),rgba(223, 237, 244, 0.5)),
     url(https://institucional.techo.org/brasil/wp-content/uploads/sites/4/2018/08/4.2.jpg) no-repeat;
     background-position: 100% 0%;
     background-size: cover;
@@ -100,6 +97,7 @@ menu img {
     font-size: 40px;
     color:white;
     font-size: 40px;
+    text-align: center;
 }
 
 .banner .content h3 {
@@ -301,18 +299,23 @@ footer h2{
     margin: 20px 0px;
 }
 
-.AMIGAS H2
+.amigas h2 {}
+
 .logos{
     display             : grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
     justify-items       : center;
     align-items         : center;
     margin              : 20px auto;
-    row-gap             : 50px;
 }
 .logos img{
     width               : 120px;
     margin: 20px;
+}
+
+
+.depoimentos .content .depoimento:not(:last-child){
+    margin-bottom: 20px;
 }
 
 
@@ -338,32 +341,6 @@ footer h2{
         flex: 1;
     }
     
-    .depoimento{
-        flex-direction: row;
-        align-self: center;
-        margin: 0 70px;
-        border-radius: 5px;
-        padding: 30px
-    }
-    .depoimento .foto{
-        flex: 4;
-    }
-    .depoimento .texto{
-        flex: 6;
-        text-align: left;
-        padding-right: 3%;
-    }
-    .depoimentos .content .depoimento:not(:last-child){
-        margin-bottom: 20px;
-    }
-    .depoimentos .content .depoimento:nth-child(2n){
-        flex-direction: row-reverse;
-    }
-    .depoimentos .content .depoimento:nth-child(2n) .texto{        
-        text-align: right;
-        padding-left: 3%;
-        padding-right: 0;
-    }
 
     menu,
     .content{
@@ -382,5 +359,39 @@ footer h2{
         column-gap          : 10%;
     }
     
+    .logos{
+
+    }
 }
 
+@media(min-width: 1040px){
+    .logos{
+        
+    grid-template-columns: repeat(4,1fr);
+    }
+
+    
+    .depoimento{
+        flex-direction: row;
+        align-self: center;
+        margin: 0 70px;
+        border-radius: 5px;
+        padding: 30px
+    }
+    .depoimento .foto{
+        flex: 4;
+    }
+    .depoimento .texto{
+        flex: 6;
+        text-align: left;
+        padding-right: 3%;
+    }    
+    .depoimentos .content .depoimento:nth-child(2n){
+        flex-direction: row-reverse;
+    }
+    .depoimentos .content .depoimento:nth-child(2n) .texto{        
+        text-align: right;
+        padding-left: 3%;
+        padding-right: 0;
+    }
+}
