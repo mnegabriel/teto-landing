@@ -67,11 +67,17 @@ menu img {
 
 /* BANNER */
 .banner{
-    background          : var(--col-blue5);
+    /* background          : linear-gradient(to bottom, var(--col-blue5),var(--col-blue5)),
+     url(https://institucional.techo.org/brasil/wp-content/uploads/sites/4/2018/08/4.2.jpg) no-repeat; */
+    
+     background: linear-gradient(to bottom, rgba(6, 166, 247, 0.3),rgba(223, 237, 244, 0.5)),
+    url(https://institucional.techo.org/brasil/wp-content/uploads/sites/4/2018/08/4.2.jpg) no-repeat;
+    background-position: 100% 0%;
+    background-size: cover;
 }
 
 .banner .content {
-    height              : 500px;
+    /* height              : 500px; */
     display             : flex;
     flex-direction      : column;
     justify-content     : center;
@@ -79,11 +85,19 @@ menu img {
     gap                 : 10px;
 }
 
+.banner .content h1{
+    font-size: 40px;
+    color:white;
+    font-size: 40px;
+}
+
 .banner .content h3 {
     font-family         : var(--font-accent);
     font-weight         : var(--font-a-regular);
-    padding             : 0 16px;
+    font-size: 20px;
+    padding             : 16px 16px;
     margin              : 20px 0 30px;
+    background: white;
 }
 
 .banner .content button {
@@ -237,13 +251,13 @@ menu img {
 }
 
 .depoimento img {
-    height              : 180px;
-    width               : 180px;
+    height              : 270px;
+    width               : 270px;
     object-fit          : cover;
     border-radius       : 5px;
-    padding             : 4px;
-    border-bottom       : 2px solid white;
-    border-top          : 2px solid white;
+    padding             : 8px;
+    border       : 2px solid white;
+    /* border-top          : 2px solid white; */
 }
 
 .texto h4{
@@ -253,10 +267,19 @@ menu img {
 }
 
     /* FOOTER */
+footer{
+    margin: 40px 20px;
+}
+
 footer h1 {
     text-align          : center;
     margin              : 40px auto;
     color               : var(--col-blue1);
+    
+}
+
+footer h2{
+    margin: 20px 0px;
 }
 
 .AMIGAS H2
@@ -266,10 +289,11 @@ footer h1 {
     justify-items       : center;
     align-items         : center;
     margin              : 20px auto;
-    row-gap             : 30px;
+    row-gap             : 50px;
 }
 .logos img{
-    width               : 80px;
+    width               : 120px;
+    margin: 20px;
 }
 
 
